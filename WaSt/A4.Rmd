@@ -1,0 +1,33 @@
+Woche 5
+a)
+n=365^k
+P1=365!/n #verschiedene Geburtstage
+P(mindestens zwei am gleichen tag)=1-P1
+
+b)
+```{r}
+
+n=25
+k=365
+counter=0
+for(i in 1:1000000){
+  bd = sample(k,n,replace = TRUE)
+  ubd =unique(bd)
+  #reps = tabulate(match(bd,ubd))
+  #max=reps[which.max(reps)]
+  if(length(bd)!=length(ubd)){
+    counter = counter +1
+  }
+  
+  
+}
+counter/1000000
+```
+
+
+Ab2
+a)
+```{r}
+
+```
+
