@@ -17,11 +17,12 @@ dbinom(5,ngroup,Pdie)
   pbinom(15,ngroup,Psurvive)
   sum(dbinom(3:18,ngroup,Pdie))
   1-pbinom(2,ngroup,Pdie)
+  pbinom(2,ngroup,Pdie,lower=FALSE)
 }
 dbinom(2,ngroup,Pdie)
   
 #d
-#keine unabh‰ngingkeit von todesopfern
+#keine unabh√§ngingkeit von todesopfern
 
 #2
 naccidents <- 4.21
@@ -29,7 +30,11 @@ n2008 <- 7
 ppois(n2008-1,lambda=naccidents,lower=FALSE)
 
 #b
-ppois(9,lambda = naccidents,lower=FALSE)
+ppois(8,lambda = naccidents,lower=FALSE)
+qpois(0.95,lambda = naccidents)
 
 #c
 #evtl. 7
+avg = naccidents*3
+0.95^3
+qpois(0.95^3,naccidents)
