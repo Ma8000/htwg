@@ -1,4 +1,10 @@
 /*
+* TRIGGER
+*/
+
+DROP TRIGGER cancellation;
+
+/*
 * TABLES
 */
 
