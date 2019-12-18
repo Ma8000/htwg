@@ -1,0 +1,59 @@
+/*
+* TABLES
+*/
+
+-- Break up the circular dependencies
+--ALTER TABLE airports DROP CONSTRAINT airports_addresses_id_fk;
+
+DROP TABLE countries CASCADE CONSTRAINTS;
+
+DROP TABLE attractions;
+
+DROP TABLE flats_images;
+
+DROP TABLE flats_extras_relations;
+
+DROP TABLE flats_extras;
+
+DROP TABLE receipts;
+
+DROP TABLE reservations;
+
+DROP TABLE accounts CASCADE CONSTRAINTS;
+
+DROP TABLE bank_accounts;
+
+DROP TABLE flats CASCADE CONSTRAINTS;
+
+DROP TABLE distances;
+
+DROP TABLE cities CASCADE CONSTRAINTS;
+
+DROP TABLE airports CASCADE CONSTRAINTS;
+
+DROP TABLE addresses CASCADE CONSTRAINTS;
+
+DROP TABLE air_routes;
+
+DROP TABLE airlines;
+
+
+DROP TABLE CANCELED_BOOKINGS;
+DROP function calc_value;
+DROP SEQUENCE id_inc ;
+
+/*
+ * VIEWS
+ */
+
+DROP VIEW V_BOOKINGS;
+
+DROP VIEW V_RESERVATIONS;
+
+DROP VIEW V_FAMILY_FLATS;
+
+DROP VIEW V_CUSTOMER_OVERVIEW;
+
+DROP VIEW V_PAYMENT_STATUS;
+
+DROP VIEW V_MID_AGE_ACCOUNTS;
